@@ -1,0 +1,9 @@
+127.0.0.1 - - [26/Feb/2018:18:33:11 +0000] "GET / HTTP/1.1" 404 993
+127.0.0.1 - - [26/Feb/2018:18:33:13 +0000] "GET /SimpleSOAPExampleClient/sampleHelloWorldProxy/Result.jsp HTTP/1.1" 200 118
+127.0.0.1 - - [26/Feb/2018:18:33:13 +0000] "GET /SimpleSOAPExampleClient/sampleHelloWorldProxy/Method.jsp HTTP/1.1" 200 438
+127.0.0.1 - - [26/Feb/2018:18:33:13 +0000] "GET /SimpleSOAPExampleClient/sampleHelloWorldProxy/Input.jsp HTTP/1.1" 200 127
+127.0.0.1 - - [26/Feb/2018:18:33:13 +0000] "GET /SimpleSOAPExampleClient/sampleHelloWorldProxy/TestClient.jsp HTTP/1.1" 200 586
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:18:33:14 +0000] "GET /SimpleSOAPExampleClient/sampleHelloWorldProxy/TestClient.jsp HTTP/1.1" 200 586
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:18:33:14 +0000] "GET /SimpleSOAPExampleClient/sampleHelloWorldProxy/Method.jsp HTTP/1.1" 200 438
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:18:33:14 +0000] "GET /SimpleSOAPExampleClient/sampleHelloWorldProxy/Input.jsp HTTP/1.1" 200 127
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:18:33:14 +0000] "GET /SimpleSOAPExampleClient/sampleHelloWorldProxy/Result.jsp? HTTP/1.1" 200 118

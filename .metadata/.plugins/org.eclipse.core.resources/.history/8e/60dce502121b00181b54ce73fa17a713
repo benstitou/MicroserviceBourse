@@ -1,0 +1,51 @@
+package com.neoxia.service;
+
+import java.util.Collection;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.hateoas.Resources;
+import org.springframework.http.HttpMethod;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+@RestController
+public class BourceGatwayRestService {
+
+	@Autowired
+	private RestTemplate restTemplate;
+
+	@RequestMapping(value = "/names", method=RequestMethod.GET)
+	public Collection<String> listSocietes() {
+		ParameterizedTypeReference<Resources<Societe>> responseType = new ParameterizedTypeReference<Resources<Societe>>() {};
+		return restTemplate.exchange("http://societe-service/societes", HttpMethod.GET, null, responseType).getBody().getContent()
+				.stream().map(Societe::getNomSociete)
+				.collect(Collectors.toList());
+	}
+}
+
+class Societe {
+	private Long id;
+	private String nomSociete;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNomSociete() {
+		return nomSociete;
+	}
+
+	public void setNomSociete(String nomSociete) {
+		this.nomSociete = nomSociete;
+	}
+
+}

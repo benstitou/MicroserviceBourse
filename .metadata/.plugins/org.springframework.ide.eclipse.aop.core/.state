@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="bourse-config-service"/>
+<aop-project name="bourse-societe-service"/>
+<aop-project name="bourse-gatway-service"/>
+<aop-project name="bourse-eureka-service"/>
+</aop-reference-model>

@@ -1,0 +1,40 @@
+package com.neoxia.service;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+@RestController
+public class BourceGatwayRestService {
+	
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	@RequestMapping(value="/names")
+	public Collection<Societe> listSociete(){
+		
+	}
+
+}
+
+class Societe{
+	private Long id;
+	private String nomSociete;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getNomSociete() {
+		return nomSociete;
+	}
+	public void setNomSociete(String nomSociete) {
+		this.nomSociete = nomSociete;
+	}
+	
+	
+}

@@ -1,0 +1,29 @@
+package com.neoxia;
+
+import java.util.stream.Stream;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration;
+
+import com.neoxia.dao.SocieteRepository;
+import com.neoxia.entities.Societe;
+
+@SpringBootApplication
+public class BourseSocieteServiceApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = SpringApplication.run(BourseSocieteServiceApplication.class, args);
+		SocieteRepository societeRepository = ctx.getBean(SocieteRepository.class);
+		Stream.of("Neoxia", "M2M Group", "Capgemini", "IAM", "S2M", "ATOS",
+				  "Wafasalaf", "INWI", "Attijari", "BP", "Casa")
+		.forEach(s -> societeRepository.save(new Societe(s)));
+		societeRepository.findAll().forEach(s -> System.out.println(s.getNomSociete()));
+	}
+}
+
+class MyConfig extends RepositoryRestConfiguration{
+	
+}

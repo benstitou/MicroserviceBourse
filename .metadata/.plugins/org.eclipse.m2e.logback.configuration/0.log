@@ -1,0 +1,7 @@
+2018-03-02 15:23:11,881 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-03-02 15:54:04,382 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.neoxia:bourse-societe-service:0.0.1-SNAPSHOT @ C:\Users\NXMAB\Documents\workspace-sts-3.9.2.RELEASE\bourse-societe-service\pom.xml.
+2018-03-02 15:54:06,551 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-03-02 15:54:06,837 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-03-02 15:54:06,839 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-03-02 15:54:06,940 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-03-02 15:54:06,940 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\NXMAB\Documents\workspace-sts-3.9.2.RELEASE\bourse-societe-service\src\test\resources

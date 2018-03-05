@@ -1,0 +1,32 @@
+package com.neoxia.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.neoxia.dao.SocieteRepository;
+import com.neoxia.entities.Societe;
+
+@RefreshScope
+@RestController
+public class BourseRestService {
+	
+	@Value("${test}")
+	private String message;
+	
+	@RequestMapping(value = "/messages")
+	public String testConf() {
+		
+		return message;
+	}
+	
+	@Autowired
+	private SocieteRepository repository;
+	
+	public void createSociete(Societe societe) {
+		this.repository.save(societe);
+	}
+
+}

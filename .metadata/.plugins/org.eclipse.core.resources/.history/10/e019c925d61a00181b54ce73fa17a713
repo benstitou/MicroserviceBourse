@@ -1,0 +1,9 @@
+package com.neoxia.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.neoxia.entities.Societe;
+
+public interface SocieteRepository extends JpaRepository<Societe, Long>{
+
+}
