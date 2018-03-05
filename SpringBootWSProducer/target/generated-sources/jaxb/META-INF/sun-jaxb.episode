@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.11 
+Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+Généré le : 2018.03.01 à 03:29:05 PM WET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.neoxia.com/article-ws">
+    <schemaBindings map="false">
+      <package name="com.neoxia.gs_ws"/>
+    </schemaBindings>
+    <bindings scd="tns:getArticleByIdRequest">
+      <class ref="com.neoxia.gs_ws.GetArticleByIdRequest"/>
+    </bindings>
+    <bindings scd="tns:getArticleByIdResponse">
+      <class ref="com.neoxia.gs_ws.GetArticleByIdResponse"/>
+    </bindings>
+    <bindings scd="~tns:articleInfo">
+      <class ref="com.neoxia.gs_ws.ArticleInfo"/>
+    </bindings>
+    <bindings scd="tns:getAllArticlesRequest">
+      <class ref="com.neoxia.gs_ws.GetAllArticlesRequest"/>
+    </bindings>
+    <bindings scd="tns:getAllArticlesResponse">
+      <class ref="com.neoxia.gs_ws.GetAllArticlesResponse"/>
+    </bindings>
+    <bindings scd="tns:addArticleRequest">
+      <class ref="com.neoxia.gs_ws.AddArticleRequest"/>
+    </bindings>
+    <bindings scd="tns:addArticleResponse">
+      <class ref="com.neoxia.gs_ws.AddArticleResponse"/>
+    </bindings>
+    <bindings scd="~tns:serviceStatus">
+      <class ref="com.neoxia.gs_ws.ServiceStatus"/>
+    </bindings>
+    <bindings scd="tns:updateArticleRequest">
+      <class ref="com.neoxia.gs_ws.UpdateArticleRequest"/>
+    </bindings>
+    <bindings scd="tns:updateArticleResponse">
+      <class ref="com.neoxia.gs_ws.UpdateArticleResponse"/>
+    </bindings>
+    <bindings scd="tns:deleteArticleRequest">
+      <class ref="com.neoxia.gs_ws.DeleteArticleRequest"/>
+    </bindings>
+    <bindings scd="tns:deleteArticleResponse">
+      <class ref="com.neoxia.gs_ws.DeleteArticleResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

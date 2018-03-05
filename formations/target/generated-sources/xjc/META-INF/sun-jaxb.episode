@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.11 
+Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+Généré le : 2018.03.02 à 05:09:08 PM WET 
+
+  -->
+  <bindings xmlns:tns="http://www.neoxia.com/article-ws" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.neoxia.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:getArticleByIdRequest">
+      <class ref="com.neoxia.wsdl.GetArticleByIdRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getArticleByIdResponse">
+      <class ref="com.neoxia.wsdl.GetArticleByIdResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:articleInfo">
+      <class ref="com.neoxia.wsdl.ArticleInfo"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getAllArticlesRequest">
+      <class ref="com.neoxia.wsdl.GetAllArticlesRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getAllArticlesResponse">
+      <class ref="com.neoxia.wsdl.GetAllArticlesResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:addArticleRequest">
+      <class ref="com.neoxia.wsdl.AddArticleRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:addArticleResponse">
+      <class ref="com.neoxia.wsdl.AddArticleResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:serviceStatus">
+      <class ref="com.neoxia.wsdl.ServiceStatus"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:updateArticleRequest">
+      <class ref="com.neoxia.wsdl.UpdateArticleRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:updateArticleResponse">
+      <class ref="com.neoxia.wsdl.UpdateArticleResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:deleteArticleRequest">
+      <class ref="com.neoxia.wsdl.DeleteArticleRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:deleteArticleResponse">
+      <class ref="com.neoxia.wsdl.DeleteArticleResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
